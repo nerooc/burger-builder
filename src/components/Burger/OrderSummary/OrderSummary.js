@@ -28,6 +28,10 @@ const orderSummary = (props) => {
             </ul>
 
             <p>
+                Total: {props.price.toFixed(2)}$
+            </p>
+
+            <p>
                 Continue to checkout?
             </p>
 
