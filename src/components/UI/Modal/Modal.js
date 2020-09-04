@@ -5,6 +5,9 @@ import Backdrop from '../Backdrop/Backdrop';
 import Auxilliary from '../../../hoc/Auxilliary';
 
 class Modal extends Component {
+    shouldComponentUpdate(nextProps, nextState){
+        return nextProps.show !== this.props.show;
+    }
 
     render() {
         return (

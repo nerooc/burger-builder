@@ -2,48 +2,54 @@ import React from 'react';
 import Auxilliary from '../../../hoc/Auxilliary';
 import Button from '../../UI/Button/Button';
 
-const orderSummary = (props) => {
-    const ingredientSummary = Object
-        .keys(props.ingredients)
-        .map((igKey) => {
-            return <li key = {igKey}>
-                <span
-                    style={{
-                    textTransform: 'capitalize'
-                }}>{igKey}</span>: {props.ingredients[igKey]}</li>
+class OrderSummary extends React.Component {
+    /* this could/should be a functional component */
+    render(){
+        const ingredientSummary = Object
+            .keys(this.props.ingredients)
+            .map((igKey) => {
+                return <li key = {igKey}>
+                    <span
+                        style={{
+                        textTransform: 'capitalize'
+                    }}>{igKey}</span>: {this.props.ingredients[igKey]}</li>
 
-        });
-    return (
-        <Auxilliary>
-            <h3>
-                Your Order
-            </h3>
+            });
 
-            <p>
-                A delicious burger with the following ingredients:
-            </p>
+        return (
+            <Auxilliary>
+                <h3>
+                    Your Order
+                </h3>
 
-            <ul>
-                {ingredientSummary}
-            </ul>
+                <p>
+                    A delicious burger with the following ingredients:
+                </p>
 
-            <p>
-                Total: {props.price.toFixed(2)}$
-            </p>
+                <ul>
+                    {ingredientSummary}
+                </ul>
 
-            <p>
-                Continue to checkout?
-            </p>
+                <p>
+                    Total: {this.props.price.toFixed(2)}$
+                </p>
 
-            <Button clicked={props.purchaseCanceled} btnType="Danger">
-                CANCEL
-            </Button>
+                <p>
+                    Continue to checkout?
+                </p>
 
-            <Button clicked={props.purchaseContinued} btnType="Success">
-                CONTINUE
-            </Button>
-        </Auxilliary>
-    );
+                <Button clicked={this.props.purchaseCanceled} btnType="Danger">
+                    CANCEL
+                </Button>
+
+                <Button clicked={this.props.purchaseContinued} btnType="Success">
+                    CONTINUE
+                </Button>
+            </Auxilliary>
+        
+        );
+    }
+    
 };
-
-export default orderSummary;
+    
+export default OrderSummary;
