@@ -1,3 +1,15 @@
+# `Burger Builder`
+
+### [OPEN DEMO]()
+
+## Tech stack
+- React.js
+- CSS Modules
+- axios
+- firebase as backend
+
+Implementing real world Burger-Builder React application by [Udemy tutorial](https://www.udemy.com/course/react-the-complete-guide-incl-redux/).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
