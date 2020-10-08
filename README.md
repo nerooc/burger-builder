@@ -8,7 +8,7 @@
 - axios
 - firebase as backend
 
-Implementing real world Burger-Builder React application by [Udemy tutorial](https://www.udemy.com/course/react-the-complete-guide-incl-redux/).
+Implementing real world Burger-Builder React application by following [Udemy tutorial](https://www.udemy.com/course/react-the-complete-guide-incl-redux/).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
