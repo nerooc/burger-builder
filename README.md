@@ -1,6 +1,6 @@
 # `Burger Builder`
 
-### [OPEN DEMO]()
+### OPEN DEMO [App not yet finished]
 
 ## Tech stack
 - React.js
